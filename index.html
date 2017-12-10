@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ycsb $ plugin</title>
+</head>
+<body>
+
+	因为传统的html+css+js的写法所写即所见，立竿见影<br>
+	而直接写插件的话可能比较抽象，导致刚开始不知道从哪里下口<br>
+	因此通常都是先用html+css+js的写法写完了，再封装成(转换成)插件<br>
+	<h1>开始</h1>
+
+	<ul class="ul">
+		<li>导航菜单1
+			<ul class="nav">
+				<li>子菜单1</li>
+				<li>子菜单2</li>
+				<li>子菜单3</li>
+			</ul>
+		</li>
+		<li>导航菜单2
+		<ul class="nav">
+				<li>子菜单1</li>
+				<li>子菜单2</li>
+				<li>子菜单3</li>
+			</ul></li>
+		<li>导航菜单3
+		<ul class="nav">
+				<li>子菜单1</li>
+				<li>子菜单2</li>
+				<li>子菜单3</li>
+			</ul></li>
+		<li>导航菜单4
+		<ul class="nav">
+				<li>子菜单1</li>
+				<li>子菜单2</li>
+				<li>子菜单3</li>
+			</ul></li>
+		<li>导航菜单5
+		<ul class="nav">
+				<li>子菜单1</li>
+				<li>子菜单2</li>
+				<li>子菜单3</li>
+			</ul></li>
+	</ul>
+
+	<style>
+		.ul{list-style:none;background:#666;color:white;font-size:16px;text-align:center;}
+		.ul > li{
+			display: inline-block;
+		}
+	</style>
+
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="./jquery.ycsbPlugin.js"></script>
+
+<script>
+	//	ul.nav是插件要控制的
+	//$.nav();
+
+	$(".ul").nav();
+
+</script>
+</body>
+</html>
